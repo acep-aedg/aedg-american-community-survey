@@ -1,1 +1,1 @@
-# aedg-american-community-survey
+This repository contains code and config files used to fetch and combine data from the US Census API for use in the Alaska Energy Data Gateway. 
