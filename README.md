@@ -1,1 +1,4 @@
 This repository contains code and config files used to fetch and combine American Community Survey data for use in the Alaska Energy Data Gateway. 
+
+# Usage
+To run the scripts, begin by cloning this repo onto your local machine. Next, add your US Census API key to ~/.Renviron. Build the R environment by opening an R console and running `renv::restore()` (install [renv](https://rstudio.github.io/renv/) if you haven't already). Run the pipeline with the shell command `rscript main.r` from the root directory. This will load libraries, and run the scripts found in `/R`, which will fetch and combine datasets from the API specified in `/config`. Sources are run or skipped by the values found in `source_control.yml`. To add a new data source, add the source name in `source_control.yml`, then add a config file in `/config` following the example of existing configurations.
