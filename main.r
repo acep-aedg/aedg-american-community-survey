@@ -7,7 +7,7 @@ library(jsonlite)
 
 invisible(lapply(list.files("R", pattern = "\\.r$", full.names = TRUE), source))
 
-fetch(start_year=2022)
+fetch(start_year=2010)
 remove_empty_geojsons(path='data/l0')
 combine_years()
 
