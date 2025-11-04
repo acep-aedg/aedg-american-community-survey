@@ -1,3 +1,0 @@
-name: DCRA
-url: https://maps.commerce.alaska.gov/server/rest/services/Demographics/Alaska_American_Community_Survey/MapServer/3/
-file-type: geojson

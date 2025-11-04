@@ -1,0 +1,3 @@
+source_entity: DCRA
+base_url: https://maps.commerce.alaska.gov/server/rest/services/Demographics/Alaska_American_Community_Survey/MapServer/2/
+format: geojson
