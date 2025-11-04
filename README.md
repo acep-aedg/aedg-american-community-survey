@@ -1,1 +1,1 @@
-This repository contains code and config files used to fetch and combine data from the US Census API for use in the Alaska Energy Data Gateway. 
+This repository contains code and config files used to fetch and combine American Community Survey data for use in the Alaska Energy Data Gateway. 
