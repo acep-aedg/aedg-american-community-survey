@@ -1,3 +1,4 @@
-dcra_household_income_and_benefits: skip
-census_s1901: run
-dcra_income_and_poverty: skip
+census_household_income_and_benefits: skip
+census_income_and_poverty: skip
+dcra_household_income_and_benefits: run
+dcra_income_and_poverty: run

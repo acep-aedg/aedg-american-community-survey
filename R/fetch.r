@@ -1,6 +1,5 @@
-fetch <- function() {
+fetch <- function(start_year=2022, end_year=as.integer(format(Sys.Date(), "%Y"))) {
   
-  years <- read_yaml("config/years.yml")
   source_control <- read_yaml("source_control.yml")
 
   for (source in names(source_control)) {
@@ -9,7 +8,7 @@ fetch <- function() {
       config <- read_yaml(file.path("config", "sources", paste0(source, ".yml")))
       cat(blue("Running source:"), bold(source), "\n")
 
-      for (year in seq(years$start, years$end)) {
+      for (year in seq(start_year, end_year)) {
         outfile <- file.path("data", "l0", source, paste0(year, ".", config$format))
         dir.create(dirname(outfile), recursive = TRUE, showWarnings = FALSE)
 

@@ -1,0 +1,5 @@
+source: census
+base_url: https://api.census.gov/data
+dataset: acs/acs5/subject
+table: S1701
+format: json
