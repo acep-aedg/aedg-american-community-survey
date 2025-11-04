@@ -21,9 +21,9 @@ fetch <- function() {
           ) |>
           req_perform(path = outfile)
         } 
-      cat(green("Downloaded", name, "\n"))
+      cat(green("Downloaded", source, "\n"))
     } else {
-      cat(red("Skipping", name, "\n"))
+      cat(red("Skipping", source, "\n"))
     }
   }
 }
